@@ -12,12 +12,11 @@ import {
   CardContent, 
   CardActions, 
   Button,
-  Link as MuiLink
+ 
 } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Code, Dataset, Palette } from '@mui/icons-material';
 import Link from 'next/link';
-import styled from '@emotion/styled';
 import Footer from './components/Footer';
 
 const theme = createTheme({
