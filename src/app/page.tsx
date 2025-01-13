@@ -12,12 +12,12 @@ import {
   CardContent, 
   CardActions, 
   Button,
- 
 } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Code, Dataset, Palette } from '@mui/icons-material';
 import Link from 'next/link';
 import Footer from './components/Footer';
+import Header from './components/Header';
 
 const theme = createTheme({
   palette: {
@@ -34,13 +34,7 @@ export default function Home() {
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-        <AppBar position="static">
-          <Toolbar>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Build with Code
-            </Typography>
-          </Toolbar>
-        </AppBar>
+      <Header />
 
         <Container maxWidth="lg" sx={{ mt: 4, mb: 4, flexGrow: 1 }}>
           <Box sx={{ my: 4 }}>
