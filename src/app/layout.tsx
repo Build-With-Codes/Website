@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import CookieConsent from './components/CookieConsent';
+import React from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
