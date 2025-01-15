@@ -1,8 +1,7 @@
 import { redirect } from 'next/navigation'
 
 export default async function Home({ searchParams }: { searchParams: { design?: string } }) {
-  const params = await searchParams;
-  const { design = 'minimalist' } = await params;
+  const { design = 'minimalist' } =searchParams;
   
   // Redirect to the appropriate design
   redirect(`/home/designs/${design}`);
